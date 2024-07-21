@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-import { IVehicleRepository } from '../../domain/repositories/IVehicleRepository';
-import { Vehicle } from '../../domain/entities/Vehicle';
+import { IVehicleRepository } from '../../domain/repositories';
+import { Vehicle } from '../../domain/entities';
 import { database } from '../InMemoryDatabase';
 
 export class VehicleRepository implements IVehicleRepository {

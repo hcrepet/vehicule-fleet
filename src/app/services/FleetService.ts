@@ -1,10 +1,9 @@
-import { FleetRepository } from '../../infra/repositories/FleetRepository';
-import { Fleet } from '../../domain/entities/Fleet';
-import { Vehicle } from '../../domain/entities/Vehicle';
+import { IFleetRepository } from '../../domain/repositories';
+import { Fleet, Vehicle } from '../../domain/entities';
 
 export class FleetService {
   constructor(
-    private fleetRepository: FleetRepository,
+    private fleetRepository: IFleetRepository,
   ) {}
 
   async create(userId: string) {

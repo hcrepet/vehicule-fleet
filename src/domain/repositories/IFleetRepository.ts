@@ -1,4 +1,4 @@
-import { Fleet } from '../entities/Fleet';
+import { Fleet } from '../entities';
 
 export interface IFleetRepository {
   save(fleet: Fleet): Promise<void>;

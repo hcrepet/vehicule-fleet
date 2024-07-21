@@ -1,12 +1,10 @@
-import { VehicleRepository } from '../../infra/repositories/VehicleRepository';
-import { IFleetRepository } from '../../domain/repositories/IFleetRepository';
+import { IVehicleRepository, IFleetRepository } from '../../domain/repositories'
 import { FleetService } from './FleetService';
-import { Vehicle, Location } from '../../domain/entities/Vehicle';
-import { Fleet } from '../../domain/entities/Fleet';
+import { Vehicle, Location, Fleet } from '../../domain/entities';
 
 export class VehicleService {
   constructor(
-    private vehicleRepository: VehicleRepository,
+    private vehicleRepository: IVehicleRepository,
     private fleetRepository: IFleetRepository,
     private fleetService: FleetService
   ) {}
