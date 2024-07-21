@@ -1,6 +1,5 @@
-import { Fleet } from '../domain/entities/Fleet';
-import { Vehicle } from '../domain/entities/Vehicle';
 import * as fs from 'fs';
+import { Fleet, Vehicle } from '../domain/entities';
 
 class InMemoryDatabase {
   private data: {

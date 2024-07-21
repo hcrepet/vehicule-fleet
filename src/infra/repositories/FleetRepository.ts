@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-import { IFleetRepository } from '../../domain/repositories/IFleetRepository';
-import { Fleet } from '../../domain/entities/Fleet';
+import { IFleetRepository } from '../../domain/repositories';
+import { Fleet } from '../../domain/entities';
 import { database } from '../InMemoryDatabase';
 
 export class FleetRepository implements IFleetRepository {

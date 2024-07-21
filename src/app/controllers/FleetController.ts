@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { FleetService } from '../services/FleetService';
+import { FleetService } from '../services';
 
 export class FleetController {
   constructor(private fleetService: FleetService) {}

@@ -1,10 +1,7 @@
 import express from 'express';
-import { VehicleController } from './app/controllers/VehicleController';
-import { VehicleService } from './app/services/VehicleService';
-import { VehicleRepository } from './infra/repositories/VehicleRepository';
-import { FleetController } from './app/controllers/FleetController';
-import { FleetService } from './app/services/FleetService';
-import { FleetRepository } from './infra/repositories/FleetRepository';
+import { FleetController, VehicleController } from './app/controllers';
+import { FleetService, VehicleService } from './app/services';
+import { FleetRepository, VehicleRepository } from './infra/repositories';
 
 export const app = express();
 app.use(express.json());
